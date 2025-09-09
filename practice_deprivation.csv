@@ -1,0 +1,398 @@
+lhb,practice,practice_code,patients,no_depriv,perc_depriv,quintile
+Betsi Cadwaladr University Health Board ,,,.,.,.,.
+Betsi Cadwaladr University Health Board ,Caritas Surgery ,W00007 ,8317,711,8.548756,3
+Betsi Cadwaladr University Health Board ,Uwchaled Medical Practice ,W00065 ,2326,0,0,5
+Betsi Cadwaladr University Health Board ,Bradley's Practice ,W00076 ,17369,341,1.963268,4
+Betsi Cadwaladr University Health Board ,Plas Meddyg Surgery ,W91002 ,10785,4,0.037089,5
+Betsi Cadwaladr University Health Board ,Clarence Medical Centre ,W91003 ,17158,8056,46.951859,1
+Betsi Cadwaladr University Health Board ,Strathmore Medical Practice ,W91004 ,13972,1249,8.939307,3
+Betsi Cadwaladr University Health Board ,Pendre Surgery ,W91005 ,10522,1983,18.846227,3
+Betsi Cadwaladr University Health Board ,Pen y Maes Health Centre ,W91006 ,7511,2206,29.370257,2
+Betsi Cadwaladr University Health Board ,Cadwgan Surgery ,W91007 ,11956,2797,23.394112,2
+Betsi Cadwaladr University Health Board ,Healthy Prestatyn Iach ,W91009 ,18697,677,3.620902,4
+Betsi Cadwaladr University Health Board ,Canolfan Iechyd Llangollen Health Centre ,W91010 ,9523,472,4.956421,4
+Betsi Cadwaladr University Health Board ,Hope Family Medical Centre ,W91013 ,9853,129,1.309246,4
+Betsi Cadwaladr University Health Board ,Kinmel Bay Medical Centre ,W91014 ,6483,1370,21.132192,3
+Betsi Cadwaladr University Health Board ,The Stables Medical Practice ,W91015 ,10078,81,0.803731,4
+Betsi Cadwaladr University Health Board ,Bryn Darland Surgery ,W91016 ,5854,21,0.358729,4
+Betsi Cadwaladr University Health Board ,Pendre Surgery ,W91017 ,10624,940,8.847892,3
+Betsi Cadwaladr University Health Board ,Roseneath Medical Practice ,W91018 ,10308,5,0.048506,5
+Betsi Cadwaladr University Health Board ,Gardden Road Surgery ,W91019 ,8075,922,11.417957,3
+Betsi Cadwaladr University Health Board ,Marches Medical Practice ,W91021 ,15268,1,0.00655,5
+Betsi Cadwaladr University Health Board ,Plas y Bryn Medical Centre ,W91022 ,13160,2125,16.147416,3
+Betsi Cadwaladr University Health Board ,Pen y Bont Surgery ,W91023 ,4889,14,0.286357,4
+Betsi Cadwaladr University Health Board ,Chirk Surgery ,W91024 ,4740,1,0.021097,5
+Betsi Cadwaladr University Health Board ,Alyn Family Doctors ,W91025 ,12239,18,0.147071,4
+Betsi Cadwaladr University Health Board ,Overton Medical Practice ,W91026 ,6241,5,0.080115,5
+Betsi Cadwaladr University Health Board ,Bronyffynnon Surgery ,W91027 ,5273,583,11.056325,3
+Betsi Cadwaladr University Health Board ,Park House Surgery ,W91028 ,9042,1448,16.014156,3
+Betsi Cadwaladr University Health Board ,Bodowen Surgery ,W91029 ,8112,906,11.168639,3
+Betsi Cadwaladr University Health Board ,St. George's Crescent Surgery ,W91030 ,6641,1433,21.578076,3
+Betsi Cadwaladr University Health Board ,Rhoslan Surgery ,W91031 ,.,.,.,.
+Betsi Cadwaladr University Health Board ,Allt Goch Medical Centre ,W91032 ,5514,1195,21.672107,2
+Betsi Cadwaladr University Health Board ,Beech House Surgery ,W91033 ,9365,455,4.858516,4
+Betsi Cadwaladr University Health Board ,The Clinic Surgery ,W91034 ,2723,2,0.073448,5
+Betsi Cadwaladr University Health Board ,Shotton Lane Surgery ,W91036 ,8368,1951,23.31501,2
+Betsi Cadwaladr University Health Board ,Pennant Surgery ,W91037 ,2364,539,22.800338,2
+Betsi Cadwaladr University Health Board ,Gwrych Medical Centre ,W91038 ,16324,3084,18.892428,3
+Betsi Cadwaladr University Health Board ,Deeside Medical Centre ,W91039 ,5730,1282,22.373473,2
+Betsi Cadwaladr University Health Board ,The Quay Surgery ,W91040 ,8865,1781,20.090243,3
+Betsi Cadwaladr University Health Board ,Beechley Medical Centre ,W91042 ,4515,753,16.677741,3
+Betsi Cadwaladr University Health Board ,Ruabon Medical Centre ,W91043 ,8414,1298,15.42667,3
+Betsi Cadwaladr University Health Board ,Leeswood Surgery ,W91044 ,2275,2,0.087912,5
+Betsi Cadwaladr University Health Board ,Eyton Place Surgery ,W91046 ,4274,984,23.022929,2
+Betsi Cadwaladr University Health Board ,Corwen Family Practice ,W91047 ,4033,0,0,5
+Betsi Cadwaladr University Health Board ,Rysseldene Surgery ,W91048 ,17674,3806,21.534457,3
+Betsi Cadwaladr University Health Board ,Queensferry Medical Practice ,W91051 ,8677,2114,24.363259,2
+Betsi Cadwaladr University Health Board ,Madryn House Surgery ,W91053 ,6950,2433,35.007194,2
+Betsi Cadwaladr University Health Board ,The Laurels Surgery ,W91055 ,6622,1326,20.024162,3
+Betsi Cadwaladr University Health Board ,Coedpoeth Health Centre ,W91056 ,2220,85,3.828829,4
+Betsi Cadwaladr University Health Board ,Middle Lane Surgery ,W91057 ,3617,308,8.515344,3
+Betsi Cadwaladr University Health Board ,Hillcrest Medical Centre ,W91058 ,15588,2028,13.010008,3
+Betsi Cadwaladr University Health Board ,Beech Avenue Practice ,W91059 ,6261,1094,17.473247,3
+Betsi Cadwaladr University Health Board ,St Mark's Dee View Surgery ,W91060 ,5478,1084,19.788244,3
+Betsi Cadwaladr University Health Board ,Hanmer Surgery ,W91604 ,1456,2,0.137363,4
+Betsi Cadwaladr University Health Board ,Caergwrle Medical Practice ,W91610 ,2004,44,2.195609,4
+Betsi Cadwaladr University Health Board ,Crane Medical Centre ,W91614 ,2255,343,15.210643,3
+Betsi Cadwaladr University Health Board ,Lakeside Medical Centre ,W91615 ,2082,1350,64.841499,1
+Betsi Cadwaladr University Health Board ,Kings House Surgery ,W91622 ,7811,2941,37.652029,1
+Betsi Cadwaladr University Health Board ,Berllan Surgery ,W91624 ,1772,102,5.756208,4
+Betsi Cadwaladr University Health Board ,Caia Park Surgery ,W91629 ,4408,2388,54.174229,1
+Betsi Cadwaladr University Health Board ,Panton Surgery ,W91636 ,3293,684,20.771333,3
+Betsi Cadwaladr University Health Board ,Mostyn House Medical Practice ,W94001 ,9742,1541,15.818107,3
+Betsi Cadwaladr University Health Board ,Amlwch Health Centre ,W94002 ,10109,0,0,5
+Betsi Cadwaladr University Health Board ,Plas Menai Surgery ,W94003 ,7413,2,0.02698,5
+Betsi Cadwaladr University Health Board ,Ffestiniog Memorial Centre ,W94004 ,4770,1,0.020964,5
+Betsi Cadwaladr University Health Board ,Betws y Coed Surgery ,W94005 ,2755,0,0,5
+Betsi Cadwaladr University Health Board ,Parc Glas Surgery ,W94006 ,4811,137,2.847641,4
+Betsi Cadwaladr University Health Board ,Tywyn Health Centre ,W94007 ,5322,0,0,5
+Betsi Cadwaladr University Health Board ,Minfor Surgery ,W94008 ,4129,0,0,5
+Betsi Cadwaladr University Health Board ,Beaumaris Health Centre ,W94009 ,4557,5,0.109721,4
+Betsi Cadwaladr University Health Board ,Bodnant Surgery ,W94010 ,11660,490,4.202401,4
+Betsi Cadwaladr University Health Board ,Treflan Surgery ,W94011 ,7216,1,0.013858,5
+Betsi Cadwaladr University Health Board ,Llanfairpwll Health Centre ,W94015 ,8216,28,0.340798,4
+Betsi Cadwaladr University Health Board ,Llys Meddyg Surgery ,W94016 ,6717,27,0.401965,4
+Betsi Cadwaladr University Health Board ,Llanberis Surgery ,W94017 ,5755,24,0.417029,4
+Betsi Cadwaladr University Health Board ,Penrhyn Bay Surgery ,W94018 ,6326,166,2.624091,4
+Betsi Cadwaladr University Health Board ,Craig Y Don Medical Practice ,W94019 ,11925,1694,14.205451,3
+Betsi Cadwaladr University Health Board ,Lonfa Surgery ,W94020 ,2344,28,1.194539,4
+Betsi Cadwaladr University Health Board ,Eifionydd Health Hub ,W94021 ,7516,0,0,5
+Betsi Cadwaladr University Health Board ,Gerafon Surgery ,W94023 ,7141,435,6.091584,4
+Betsi Cadwaladr University Health Board ,Gwydir Surgery ,W94024 ,5599,0,0,5
+Betsi Cadwaladr University Health Board ,Rhydbach Surgery ,W94025 ,4266,0,0,5
+Betsi Cadwaladr University Health Board ,Cybi Health Hub ,W94026 ,9081,4410,48.562934,1
+Betsi Cadwaladr University Health Board ,Felinheli & Porthaethwy Surgery ,W94027 ,6666,30,0.450045,4
+Betsi Cadwaladr University Health Board ,Yr Hen Orsaf Medical Centre ,W94028 ,7366,95,1.289709,4
+Betsi Cadwaladr University Health Board ,Coed Y Glyn Surgery ,W94029 ,7256,978,13.478501,3
+Betsi Cadwaladr University Health Board ,Market Street Surgery ,W94030 ,13286,4539,34.163781,2
+Betsi Cadwaladr University Health Board ,Bodreinallt ,W94031 ,6931,30,0.432838,4
+Betsi Cadwaladr University Health Board ,Bron Meirion ,W94032 ,7815,0,0,5
+Betsi Cadwaladr University Health Board ,Bron Derw Medical Centre ,W94034 ,9957,2098,21.070604,3
+Betsi Cadwaladr University Health Board ,Bala Surgery ,W94035 ,4548,0,0,5
+Betsi Cadwaladr University Health Board ,Caerffynnon ,W94036 ,4918,0,0,5
+Betsi Cadwaladr University Health Board ,Ty Doctor ,W94037 ,5914,1,0.016909,5
+Betsi Cadwaladr University Health Board ,Victoria Surgery ,W94038 ,11200,3721,33.223214,2
+Betsi Cadwaladr University Health Board ,Liverpool House ,W94039 ,5946,210,3.531786,4
+Betsi Cadwaladr University Health Board ,Gwalchmai Surgery ,W94043 ,2286,41,1.793526,4
+Betsi Cadwaladr University Health Board ,Corwen House ,W94609 ,6999,109,1.557365,4
+Betsi Cadwaladr University Health Board ,West Shore Surgery ,W94622 ,2064,230,11.143411,3
+Betsi Cadwaladr University Health Board ,Star Surgery ,W94633 ,1398,16,1.144492,4
+Powys Teaching Health Board ,,,.,.,.,.
+Powys Teaching Health Board ,Montgomery Medical Practice ,W96001 ,7640,533,6.97644,3
+Powys Teaching Health Board ,Pengorof Surgery ,W96002 ,12468,2209,17.717356,3
+Powys Teaching Health Board ,Ty Henry Vaughan ,W96003 ,15434,0,0,5
+Powys Teaching Health Board ,Wylcwm Street Surgery ,W96004 ,3936,0,0,5
+Powys Teaching Health Board ,Arwystli Medical Practice ,W96005 ,9102,5,0.054933,5
+Powys Teaching Health Board ,Rhayader Group Practice ,W96006 ,3359,1,0.029771,5
+Powys Teaching Health Board ,Builth Wells Medical Practice ,W96007 ,7598,1,0.013161,5
+Powys Teaching Health Board ,Caereinion Medical Practice ,W96009 ,5924,76,1.282917,4
+Powys Teaching Health Board ,Welshpool Medical Centre ,W96010 ,11439,1517,13.261649,3
+Powys Teaching Health Board ,Dyfi Valley Health ,W96011 ,6770,1,0.014771,5
+Powys Teaching Health Board ,Llanfyllin Group Practice ,W96012 ,10581,1,0.009451,5
+Powys Teaching Health Board ,Llandrindod Wells Medical Centre ,W96013 ,10839,1405,12.96245,3
+Powys Teaching Health Board ,Newtown Medical Practice ,W96015 ,13486,3791,28.110633,2
+Powys Teaching Health Board ,War Memorial Health Centre ,W96016 ,8945,9,0.100615,5
+Powys Teaching Health Board ,Hay on Wye Health Centre ,W96017 ,7898,0,0,5
+Powys Teaching Health Board ,Presteigne Medical Practice ,W96438 ,3076,0,0,5
+Hywel Dda University Health Board ,,,.,.,.,.
+Hywel Dda University Health Board ,Argyle Medical Group ,W00067 ,22614,6827,30.189263,2
+Hywel Dda University Health Board ,Ashgrove Medical Centre ,W00133 ,7863,1925,24.48175,2
+Hywel Dda University Health Board ,The Llwynhendy Health Centre ,W00134 ,11387,2849,25.019759,2
+Hywel Dda University Health Board ,Amman Tawe Partnership ,W00142 ,6610,10,0.151286,4
+Hywel Dda University Health Board ,St Thomas Surgery ,W92002 ,13327,836,6.27298,3
+Hywel Dda University Health Board ,Minafon Surgery ,W92003 ,8547,2672,31.262431,2
+Hywel Dda University Health Board ,New Quay Surgery ,W92005 ,5111,0,0,5
+Hywel Dda University Health Board ,Borth Medical Practice ,W92006 ,2648,0,0,5
+Hywel Dda University Health Board ,Coach & Horses Surgery ,W92007 ,7242,1,0.013808,5
+Hywel Dda University Health Board ,Barlow House Surgery ,W92008 ,9129,3236,35.447475,2
+Hywel Dda University Health Board ,Teilo Surgery ,W92009 ,9631,0,0,5
+Hywel Dda University Health Board ,Sarn Surgery ,W92013 ,4329,165,3.811504,4
+Hywel Dda University Health Board ,Church Surgery ,W92014 ,9425,0,0,5
+Hywel Dda University Health Board ,Fishguard Health Centre ,W92015 ,9516,1,0.010509,5
+Hywel Dda University Health Board ,Furnace House Surgery ,W92016 ,14894,652,4.377602,4
+Hywel Dda University Health Board ,Emlyn Surgery ,W92018 ,10068,217,2.155344,4
+Hywel Dda University Health Board ,Llynyfran Surgery ,W92019 ,9955,0,0,5
+Hywel Dda University Health Board ,Fairfield Surgery ,W92021 ,7845,2329,29.687699,2
+Hywel Dda University Health Board ,Tanyfron Primary Care ,W92022 ,7148,1,0.01399,5
+Hywel Dda University Health Board ,Taf Surgery ,W92023 ,7713,1,0.012965,5
+Hywel Dda University Health Board ,Meddygfa Padarn Surgery ,W92024 ,11357,0,0,5
+Hywel Dda University Health Board ,Ystwyth Medical Group ,W92025 ,8766,0,0,5
+Hywel Dda University Health Board ,Tenby Surgery ,W92027 ,7275,18,0.247423,4
+Hywel Dda University Health Board ,Tywyn Bach Surgery ,W92031 ,7422,42,0.565885,4
+Hywel Dda University Health Board ,Saundersfoot Medical Centre ,W92033 ,9932,3,0.030205,5
+Hywel Dda University Health Board ,Tumble Surgery ,W92035 ,7076,1,0.014132,5
+Hywel Dda University Health Board ,Brynteg Surgery ,W92036 ,11016,0,0,5
+Hywel Dda University Health Board ,Avenue Villa Surgery ,W92037 ,9588,2653,27.670004,2
+Hywel Dda University Health Board ,Narberth Surgery ,W92038 ,8796,1,0.011369,5
+Hywel Dda University Health Board ,Bro Pedr Medical Group ,W92039 ,12044,1,0.008303,5
+Hywel Dda University Health Board ,Margaret Street Practice ,W92040 ,9581,0,0,5
+Hywel Dda University Health Board ,The Robert Street Surgery ,W92041 ,8300,2643,31.843373,2
+Hywel Dda University Health Board ,Winch Lane Surgery ,W92042 ,15462,873,5.6461,4
+Hywel Dda University Health Board ,Cardigan Health Centre ,W92044 ,10368,2243,21.633873,2
+Hywel Dda University Health Board ,Coalbrook Surgery ,W92046 ,4852,27,0.556472,4
+Hywel Dda University Health Board ,Llangennech Surgery ,W92048 ,4156,255,6.135707,3
+Hywel Dda University Health Board ,St Peter's Surgery ,W92050 ,6787,388,5.716812,4
+Hywel Dda University Health Board ,Penygroes Surgery ,W92051 ,9045,5,0.055279,5
+Hywel Dda University Health Board ,Ty Elli Group Practice ,W92052 ,14320,4411,30.803073,2
+Hywel Dda University Health Board ,Tregaron Surgery ,W92053 ,3669,0,0,5
+Hywel Dda University Health Board ,Llanfair Surgery ,W92055 ,5628,0,0,5
+Hywel Dda University Health Board ,Llanilar Health Centre ,W92056 ,3422,0,0,5
+Hywel Dda University Health Board ,St Davids Surgery ,W92058 ,2722,0,0,5
+Hywel Dda University Health Board ,Solva Surgery ,W92059 ,2146,0,0,5
+Hywel Dda University Health Board ,Tywi Surgery ,W92063 ,4332,24,0.554017,4
+Hywel Dda University Health Board ,Newport Surgery ,W92064 ,8143,74,0.908756,4
+Hywel Dda University Health Board ,Neyland Health Centre ,W92440 ,5877,66,1.123022,4
+Hywel Dda University Health Board ,Morfa Lane Surgery ,W92616 ,3980,153,3.844221,4
+Swansea Bay University Health Board ,,,.,.,.,.
+Swansea Bay University Health Board ,Rosedale Medical Practice ,W00141 ,.,.,.,.
+Swansea Bay University Health Board ,Amman Tawe Partnership ,W00143 ,3482,222,6.375646,3
+Swansea Bay University Health Board ,Waterside Medical Practice ,W00144 ,13126,7377,56.201432,1
+Swansea Bay University Health Board ,Pontardawe Health Centre ,W98001 ,13260,16,0.120664,4
+Swansea Bay University Health Board ,Dyfed Road Health Centre ,W98002 ,10602,3560,33.57857,2
+Swansea Bay University Health Board ,Cwmfelin Medical Centre ,W98003 ,8266,4318,52.238084,1
+Swansea Bay University Health Board ,Brynhyfryd Medical Centre ,W98004 ,10221,4143,40.534194,1
+Swansea Bay University Health Board ,Llansamlet Surgery ,W98005 ,10176,1650,16.214623,3
+Swansea Bay University Health Board ,Castle Surgery ,W98006 ,9992,2526,25.280224,2
+Swansea Bay University Health Board ,Practice 2 Fforestfach Medical Centre ,W98007 ,6493,3710,57.138457,1
+Swansea Bay University Health Board ,Princess Street Surgery ,W98008 ,7734,701,9.063874,3
+Swansea Bay University Health Board ,Skewen Medical Centre ,W98010 ,9154,1278,13.96111,3
+Swansea Bay University Health Board ,Estuary Group Practice ,W98012 ,20241,1675,8.275283,3
+Swansea Bay University Health Board ,Talybont Surgery ,W98013 ,9905,1027,10.368501,3
+Swansea Bay University Health Board ,Mountain View Health Centre ,W98015 ,6046,4763,78.779358,1
+Swansea Bay University Health Board ,St Thomas Surgery ,W98016 ,9053,1737,19.18701,3
+Swansea Bay University Health Board ,Afan Valley Group Practice ,W98017 ,2786,2290,82.196698,1
+Swansea Bay University Health Board ,Cwmafan Health Centre ,W98019 ,7815,2843,36.378759,2
+Swansea Bay University Health Board ,Nicholl St Medical Centre ,W98020 ,3920,1376,35.102041,2
+Swansea Bay University Health Board ,Sketty & Killay Medical Centres ,W98021 ,22346,1599,7.155643,3
+Swansea Bay University Health Board ,Cwmtawe Medical Group ,W98022 ,25681,5262,20.489856,3
+Swansea Bay University Health Board ,The Grove Medical Centre ,W98023 ,8575,1274,14.857143,3
+Swansea Bay University Health Board ,Brunswick Health Centre ,W98024 ,6174,2028,32.847425,2
+Swansea Bay University Health Board ,Kingsway Surgery ,W98027 ,12190,6780,55.61936,1
+Swansea Bay University Health Board ,Practice 1 Fforestfach Medical Centre ,W98028 ,7774,4550,58.528428,1
+Swansea Bay University Health Board ,Dulais Valley Primary Care Centre ,W98030 ,6049,30,0.49595,4
+Swansea Bay University Health Board ,Mount Surgery ,W98031 ,11642,4155,35.689744,2
+Swansea Bay University Health Board ,Fairfield Surgery ,W98032 ,8099,4642,57.315718,1
+Swansea Bay University Health Board ,The Mumbles Medical Practice ,W98033 ,7735,16,0.206852,4
+Swansea Bay University Health Board ,Ty'r Felin Surgery ,W98034 ,11634,713,6.128589,4
+Swansea Bay University Health Board ,Riverside Surgery ,W98035 ,9062,4959,54.723019,1
+Swansea Bay University Health Board ,Victoria Gardens Surgery ,W98036 ,7832,3572,45.607763,1
+Swansea Bay University Health Board ,Greenhill Medical Centre ,W98039 ,4762,2974,62.452751,1
+Swansea Bay University Health Board ,Briton Ferry Health Centre ,W98040 ,6038,3407,56.425969,1
+Swansea Bay University Health Board ,King's Surgery ,W98041 ,6512,3904,59.95086,1
+Swansea Bay University Health Board ,Manselton Surgery ,W98043 ,4945,1894,38.301314,1
+Swansea Bay University Health Board ,Strawberry Place Surgery ,W98044 ,7251,2698,37.208661,1
+Swansea Bay University Health Board ,Gower Medical Practice ,W98045 ,6419,1,0.015579,5
+Swansea Bay University Health Board ,Vale of Neath Practice ,W98046 ,9479,1552,16.373035,3
+Swansea Bay University Health Board ,Tabernacle Surgery ,W98048 ,5158,767,14.870105,3
+Swansea Bay University Health Board ,Uplands Surgery ,W98049 ,10475,404,3.856802,4
+Swansea Bay University Health Board ,University Health Centre ,W98053 ,7593,1265,16.660082,3
+Swansea Bay University Health Board ,Kings Road Surgery ,W98055 ,3791,19,0.501187,4
+Swansea Bay University Health Board ,Harbourside Health Centre ,W98056 ,6993,2285,32.675533,2
+Swansea Bay University Health Board ,SA1 Medical Centre ,W98057 ,8725,3215,36.848138,2
+Swansea Bay University Health Board ,Abertawe Medical Partnership ,W98608 ,6959,2858,41.069119,1
+Swansea Bay University Health Board ,Cheriton Medical Centre ,W98612 ,.,.,.,.
+Swansea Bay University Health Board ,Cwmavon Health Centre ,W98627 ,.,.,.,.
+Swansea Bay University Health Board ,Alfred Street Primary Care Centre ,W98785 ,.,.,.,.
+Cwm Taf Morgannwg University Health Board ,,,.,.,.,.
+Cwm Taf Morgannwg University Health Board ,St Johns Medical Practice ,W95001 ,15616,3610,23.117316,2
+Cwm Taf Morgannwg University Health Board ,Pont Newydd Medical Centre ,W95004 ,14049,4073,28.991387,2
+Cwm Taf Morgannwg University Health Board ,Practice 3 Keir Hardie Health Park ,W95005 ,3592,1578,43.930958,1
+Cwm Taf Morgannwg University Health Board ,Llynfi Surgery ,W95009 ,8090,3959,48.936959,1
+Cwm Taf Morgannwg University Health Board ,Oak Tree Surgery ,W95010 ,18151,1798,9.90579,3
+Cwm Taf Morgannwg University Health Board ,Parc Canol Group Practice ,W95011 ,16810,668,3.973825,4
+Cwm Taf Morgannwg University Health Board ,Woodlands Surgery ,W95012 ,6922,4920,71.077723,1
+Cwm Taf Morgannwg University Health Board ,Eglwysbach Medical Practice ,W95014 ,16266,2561,15.744498,3
+Cwm Taf Morgannwg University Health Board ,Cwmaman Surgery ,W95016 ,5091,2279,44.765272,1
+Cwm Taf Morgannwg University Health Board ,The New Surgery ,W95017 ,8730,15,0.171821,4
+Cwm Taf Morgannwg University Health Board ,Pencoed Medical Centre ,W95018 ,11744,6,0.05109,5
+Cwm Taf Morgannwg University Health Board ,Tylorstown Surgery ,W95019 ,5903,4027,68.219549,1
+Cwm Taf Morgannwg University Health Board ,Hirwaun Medical Centre ,W95020 ,6356,2282,35.903084,2
+Cwm Taf Morgannwg University Health Board ,Practice 1 Keir Hardie Health Park ,W95023 ,8513,3396,39.89193,1
+Cwm Taf Morgannwg University Health Board ,Ashgrove Surgery ,W95024 ,20021,5268,26.312372,2
+Cwm Taf Morgannwg University Health Board ,Old School Surgery ,W95025 ,12209,1573,12.883938,3
+Cwm Taf Morgannwg University Health Board ,Troed y Fan Medical Practice ,W95026 ,.,.,.,.
+Cwm Taf Morgannwg University Health Board ,De Winton Field Practice ,W95027 ,9299,3454,37.143779,2
+Cwm Taf Morgannwg University Health Board ,Meddygfa Glan Cynon Surgery ,W95029 ,10860,5179,47.688766,1
+Cwm Taf Morgannwg University Health Board ,St. David's Street Surgery ,W95030 ,9465,2622,27.70206,2
+Cwm Taf Morgannwg University Health Board ,Cwm Garw Practice ,W95031 ,7455,2110,28.303152,2
+Cwm Taf Morgannwg University Health Board ,Treharris Primary Care Centre ,W95032 ,8920,70,0.784753,4
+Cwm Taf Morgannwg University Health Board ,Cornelly Surgery ,W95034 ,10272,2240,21.806854,2
+Cwm Taf Morgannwg University Health Board ,Riversdale House ,W95035 ,19016,3043,16.002314,3
+Cwm Taf Morgannwg University Health Board ,Talbot Green Group Practice ,W95036 ,12224,515,4.213024,4
+Cwm Taf Morgannwg University Health Board ,Tynycoed Surgery ,W95037 ,10920,1143,10.467033,3
+Cwm Taf Morgannwg University Health Board ,Penrhiwceiber Medical Centre ,W95038 ,.,.,.,.
+Cwm Taf Morgannwg University Health Board ,Porthcawl Medical Centre ,W95041 ,15581,74,0.474937,4
+Cwm Taf Morgannwg University Health Board ,Abercynon Medical Centre ,W95042 ,6552,1591,24.282662,2
+Cwm Taf Morgannwg University Health Board ,Park Lane Surgery ,W95044 ,8423,2914,34.59575,2
+Cwm Taf Morgannwg University Health Board ,Ferndale Medical Centre ,W95051 ,7545,4016,53.227303,1
+Cwm Taf Morgannwg University Health Board ,Forest View Medical Centre ,W95054 ,15937,5146,32.28964,2
+Cwm Taf Morgannwg University Health Board ,Penygraig Surgery ,W95057 ,4174,1519,36.39195,2
+Cwm Taf Morgannwg University Health Board ,Taff Vale Practice ,W95058 ,16052,5075,31.615998,2
+Cwm Taf Morgannwg University Health Board ,Taffs Well Medical Centre ,W95060 ,7146,8,0.111951,4
+Cwm Taf Morgannwg University Health Board ,St. Andrews Surgery ,W95062 ,6675,2378,35.625468,2
+Cwm Taf Morgannwg University Health Board ,Heathbridge House ,W95063 ,8649,1557,18.002081,3
+Cwm Taf Morgannwg University Health Board ,Bron y Garn Surgery ,W95064 ,6826,3083,45.165544,1
+Cwm Taf Morgannwg University Health Board ,Ogmore Vale Surgery ,W95067 ,.,.,.,.
+Cwm Taf Morgannwg University Health Board ,Bridgend Group Practice ,W95070 ,25951,2182,8.408154,3
+Cwm Taf Morgannwg University Health Board ,Pontcae Medical Practice ,W95072 ,12530,4161,33.2083,2
+Cwm Taf Morgannwg University Health Board ,Llwynypia Surgery ,W95076 ,.,.,.,.
+Cwm Taf Morgannwg University Health Board ,New Street Surgery ,W95079 ,.,.,.,.
+Cwm Taf Morgannwg University Health Board ,Morlais Medical Practice ,W95086 ,25280,8637,34.165348,2
+Cwm Taf Morgannwg University Health Board ,Abercwmboi Medical Centre ,W95087 ,4365,2111,48.36197,1
+Cwm Taf Morgannwg University Health Board ,Cwm Gwrydd Medical Centre ,W95295 ,7101,3459,48.711449,1
+Cwm Taf Morgannwg University Health Board ,Foundry Town Clinic ,W95633 ,10117,3540,34.99061,2
+Cwm Taf Morgannwg University Health Board ,Nantymoel Surgery ,W95645 ,3253,995,30.58715,2
+Cwm Taf Morgannwg University Health Board ,Practice 2 Keir Hardie Health Park ,W95647 ,2802,1346,48.037116,1
+Aneurin Bevan University Health Board ,,,.,.,.,.
+Aneurin Bevan University Health Board ,Aber Medical Centre ,W00005 ,8667,2384,27.506634,2
+Aneurin Bevan University Health Board ,St. Luke's Surgery ,W93001 ,7807,586,7.506084,3
+Aneurin Bevan University Health Board ,Tudor Gate Surgery ,W93004 ,8622,629,7.295291,3
+Aneurin Bevan University Health Board ,Cwm Calon ,W93007 ,5412,2093,38.673319,1
+Aneurin Bevan University Health Board ,Aberbeeg Medical Practice ,W93009 ,4708,3710,78.802039,1
+Aneurin Bevan University Health Board ,Avicenna Medical Centre ,W93011 ,13984,305,2.181064,4
+Aneurin Bevan University Health Board ,Pontllanfraith Health Centre ,W93012 ,8387,175,2.086563,4
+Aneurin Bevan University Health Board ,Sunnybank Health Centre ,W93014 ,5625,1121,19.928889,3
+Aneurin Bevan University Health Board ,Blaenavon Medical Practice ,W93015 ,6583,1792,27.221631,2
+Aneurin Bevan University Health Board ,Isca Medical Centre ,W93018 ,9346,85,0.90948,4
+Aneurin Bevan University Health Board ,Wye Valley Practice ,W93019 ,2741,1,0.036483,5
+Aneurin Bevan University Health Board ,Vauxhall Surgery ,W93020 ,6311,0,0,5
+Aneurin Bevan University Health Board ,Mount Pleasant Practice ,W93021 ,8224,1,0.01216,5
+Aneurin Bevan University Health Board ,Town Gate Practice ,W93022 ,6376,0,0,5
+Aneurin Bevan University Health Board ,Gray Hill Surgery ,W93023 ,20049,0,0,5
+Aneurin Bevan University Health Board ,Oak Street Surgery ,W93024 ,8149,2357,28.923794,2
+Aneurin Bevan University Health Board ,New Chapel Street Surgery ,W93026 ,4771,913,19.136449,3
+Aneurin Bevan University Health Board ,Cwmbran Village Surgery ,W93027 ,15681,3218,20.52165,3
+Aneurin Bevan University Health Board ,Clark Avenue Surgery ,W93028 ,10884,2781,25.551268,2
+Aneurin Bevan University Health Board ,Nant Dowlais Health Centre ,W93029 ,9817,3395,34.582866,2
+Aneurin Bevan University Health Board ,Panteg Health Centre ,W93031 ,6617,795,12.014508,3
+Aneurin Bevan University Health Board ,Glan Rhyd Surgery ,W93032 ,10383,3914,37.696234,1
+Aneurin Bevan University Health Board ,Old Station Surgery ,W93033 ,10732,886,8.255684,3
+Aneurin Bevan University Health Board ,Glyn Ebwy Surgery ,W93035 ,.,.,.,.
+Aneurin Bevan University Health Board ,Castle Gate Medical Practice ,W93036 ,12579,0,0,5
+Aneurin Bevan University Health Board ,Usk Surgery ,W93037 ,6523,0,0,5
+Aneurin Bevan University Health Board ,St. Paul's Clinic ,W93039 ,6486,5272,81.282763,1
+Aneurin Bevan University Health Board ,Park Surgery ,W93040 ,6282,2888,45.97262,1
+Aneurin Bevan University Health Board ,Richmond Clinic ,W93043 ,6277,2265,36.084117,2
+Aneurin Bevan University Health Board ,The Rugby Surgery ,W93044 ,10142,5804,57.227371,1
+Aneurin Bevan University Health Board ,Westfield Medical Centre ,W93045 ,7744,2608,33.677686,2
+Aneurin Bevan University Health Board ,Bryngwyn Surgery ,W93046 ,7391,2294,31.037749,2
+Aneurin Bevan University Health Board ,Ringland Medical Practice ,W93047 ,8708,5713,65.606339,1
+Aneurin Bevan University Health Board ,Bellevue Surgery ,W93048 ,19415,13052,67.226371,1
+Aneurin Bevan University Health Board ,St Julians Medical Centre ,W93049 ,14557,5110,35.103387,2
+Aneurin Bevan University Health Board ,Malpas Brook Health Centre ,W93051 ,10631,4043,38.030289,1
+Aneurin Bevan University Health Board ,Beechwood Primary Care ,W93053 ,14373,6310,43.90176,1
+Aneurin Bevan University Health Board ,St David's Clinic ,W93054 ,20646,8460,40.97646,1
+Aneurin Bevan University Health Board ,Trosnant Lodge ,W93055 ,7019,2240,31.913378,2
+Aneurin Bevan University Health Board ,Churchwood Surgery ,W93056 ,.,.,.,.
+Aneurin Bevan University Health Board ,Abersychan Group Practice ,W93057 ,10576,6331,59.861952,1
+Aneurin Bevan University Health Board ,The Mount Surgery ,W93058 ,18197,6483,35.626752,2
+Aneurin Bevan University Health Board ,Wellspring Medical Centre ,W93059 ,9204,0,0,5
+Aneurin Bevan University Health Board ,The Rogerstone Practice ,W93061 ,13374,7,0.05234,5
+Aneurin Bevan University Health Board ,Tredegar Health Centre ,W93063 ,6650,2846,42.796992,1
+Aneurin Bevan University Health Board ,Risca Surgery ,W93064 ,12849,3,0.023348,5
+Aneurin Bevan University Health Board ,Glan yr Afon Surgery ,W93065 ,7008,2751,39.255137,1
+Aneurin Bevan University Health Board ,North Celynen Practice ,W93067 ,9426,2208,23.42457,2
+Aneurin Bevan University Health Board ,Brynmawr Medical Practice ,W93068 ,10804,5212,48.241392,1
+Aneurin Bevan University Health Board ,Dixton Surgery ,W93072 ,3987,0,0,5
+Aneurin Bevan University Health Board ,Abertillery Group Practice ,W93075 ,6004,3021,50.316456,1
+Aneurin Bevan University Health Board ,Blaina Medical Practice ,W93115 ,6550,3040,46.412214,1
+Aneurin Bevan University Health Board ,St Brides Medical Centre ,W93116 ,.,.,.,.
+Aneurin Bevan University Health Board ,Underwood Health Centre ,W93125 ,5836,7,0.119945,4
+Aneurin Bevan University Health Board ,Hereford Road Surgery ,W93126 ,5050,287,5.683168,4
+Aneurin Bevan University Health Board ,Pengam Health Centre ,W93614 ,4653,473,10.165485,3
+Aneurin Bevan University Health Board ,Cwm Health Centre ,W93619 ,5099,1756,34.438125,2
+Aneurin Bevan University Health Board ,Pen-y-Cae Surgery ,W93623 ,9750,3986,40.882051,1
+Aneurin Bevan University Health Board ,Lliswerry Medical Centre ,W93640 ,6371,1777,27.892011,2
+Aneurin Bevan University Health Board ,"Wye Dean Practice, Tintern Surgery ",W93643 ,1492,0,0,5
+Aneurin Bevan University Health Board ,Ty Bryn Surgery ,W95008 ,11090,3149,28.39495,2
+Aneurin Bevan University Health Board ,The Lawn Medical Practice ,W95013 ,.,.,.,.
+Aneurin Bevan University Health Board ,Nelson Surgery ,W95043 ,4953,78,1.574803,4
+Aneurin Bevan University Health Board ,Tonyfelin Medical Centre ,W95046 ,12490,3144,25.172138,2
+Aneurin Bevan University Health Board ,Nantgarw Road Medical Centre ,W95049 ,9979,3104,31.105321,2
+Aneurin Bevan University Health Board ,Meddygfa Gelligaer Surgery ,W95050 ,8000,2841,35.5125,2
+Aneurin Bevan University Health Board ,Court House Medical Centre ,W95059 ,10613,2931,27.617073,2
+Aneurin Bevan University Health Board ,Oakfield Surgery ,W95065 ,13309,2013,15.125103,3
+Aneurin Bevan University Health Board ,Bryntirion Surgery ,W95068 ,11059,4809,43.484944,1
+Aneurin Bevan University Health Board ,The Village Surgery ,W95073 ,3231,300,9.285051,3
+Aneurin Bevan University Health Board ,South Street Surgery ,W95078 ,3194,958,29.993738,2
+Aneurin Bevan University Health Board ,Cwm Rhymni Practice ,W95081 ,18109,12230,67.53548,1
+Cardiff and Vale University Health Board ,,,.,.,.,.
+Cardiff and Vale University Health Board ,West Quay Medical Centre ,W97001 ,14502,1834,12.646532,3
+Cardiff and Vale University Health Board ,Roathwell Surgery ,W97002 ,6158,3940,63.981812,1
+Cardiff and Vale University Health Board ,Redlands Surgery ,W97003 ,9443,9,0.095309,5
+Cardiff and Vale University Health Board ,Llandaff Fields Medical Practice ,W97005 ,3437,1782,51.847541,1
+Cardiff and Vale University Health Board ,Brynderwen Surgery ,W97006 ,18816,7482,39.764031,1
+Cardiff and Vale University Health Board ,Cloughmore Medical Centre ,W97007 ,8136,5835,71.718289,1
+Cardiff and Vale University Health Board ,Llan Healthcare ,W97008 ,19458,10858,55.802241,1
+Cardiff and Vale University Health Board ,Cathays Surgery ,W97009 ,6763,13,0.192222,4
+Cardiff and Vale University Health Board ,Cyncoed Medical Practice ,W97010 ,11016,97,0.880537,4
+Cardiff and Vale University Health Board ,Penarth Healthcare Partnership ,W97011 ,16315,6,0.036776,5
+Cardiff and Vale University Health Board ,Llanishen Court Surgery ,W97013 ,9823,11,0.111982,4
+Cardiff and Vale University Health Board ,Albany Surgery ,W97014 ,6581,844,12.824799,3
+Cardiff and Vale University Health Board ,North Cardiff Medical Centre ,W97015 ,14900,28,0.187919,4
+Cardiff and Vale University Health Board ,Taff Riverside Practice ,W97016 ,3425,2203,64.321168,1
+Cardiff and Vale University Health Board ,Westway Surgery ,W97017 ,.,.,.,.
+Cardiff and Vale University Health Board ,St Davids Court Surgery ,W97018 ,5101,2602,51.009606,1
+Cardiff and Vale University Health Board ,North Road Medical Practice ,W97020 ,10453,1803,17.248637,3
+Cardiff and Vale University Health Board ,Birchgrove Surgery ,W97021 ,10932,28,0.256129,4
+Cardiff and Vale University Health Board ,Woodlands Medical Centre ,W97023 ,9153,4050,44.247788,1
+Cardiff and Vale University Health Board ,Radyr Medical Centre ,W97024 ,10670,11,0.103093,5
+Cardiff and Vale University Health Board ,Whitchurch Road Surgery ,W97025 ,7816,360,4.605937,4
+Cardiff and Vale University Health Board ,Rumney Primary Care Centre ,W97027 ,15826,6683,42.227979,1
+Cardiff and Vale University Health Board ,Bishops Road Medical Centre ,W97028 ,8292,422,5.089243,4
+Cardiff and Vale University Health Board ,Saltmead Medical Centre ,W97029 ,.,.,.,.
+Cardiff and Vale University Health Board ,Lansdowne Surgery ,W97031 ,16024,7502,46.817274,1
+Cardiff and Vale University Health Board ,Waterfront Surgery ,W97032 ,12564,4130,32.871697,2
+Cardiff and Vale University Health Board ,Penylan Surgery ,W97033 ,9416,375,3.982583,4
+Cardiff and Vale University Health Board ,Roath House Surgery ,W97034 ,14754,1263,8.56039,3
+Cardiff and Vale University Health Board ,Cowbridge & Vale Medical Practice ,W97038 ,8135,0,0,5
+Cardiff and Vale University Health Board ,Ely Bridge Surgery ,W97040 ,12160,8606,70.773026,1
+Cardiff and Vale University Health Board ,Crwys Medical Centre ,W97041 ,8717,105,1.204543,4
+Cardiff and Vale University Health Board ,Cardiff Bay Surgery ,W97044 ,9036,4273,47.288623,1
+Cardiff and Vale University Health Board ,Llantwit Major & Coastal Vale Medical Practice ,W97045 ,10557,0,0,5
+Cardiff and Vale University Health Board ,Vale Group Practice ,W97046 ,19386,4934,25.451357,2
+Cardiff and Vale University Health Board ,Fairwater Health Centre ,W97047 ,10031,3964,39.517496,1
+Cardiff and Vale University Health Board ,Four Elms Medical Centre ,W97048 ,15844,7846,49.520323,1
+Cardiff and Vale University Health Board ,Western Vale Family Practice ,W97052 ,13090,1,0.007639,5
+Cardiff and Vale University Health Board ,St Isan Road Surgery ,W97053 ,7597,70,0.921416,4
+Cardiff and Vale University Health Board ,Dinas Powys Medical Centre ,W97055 ,11051,41,0.371007,4
+Cardiff and Vale University Health Board ,City Surgery ,W97056 ,6424,1551,24.143836,2
+Cardiff and Vale University Health Board ,Albert Road Surgery ,W97057 ,.,.,.,.
+Cardiff and Vale University Health Board ,Court Road Surgery ,W97058 ,7739,2258,29.176896,2
+Cardiff and Vale University Health Board ,Clifton Surgery ,W97060 ,7485,4589,61.309285,1
+Cardiff and Vale University Health Board ,Grange Medical Practice ,W97061 ,10992,6087,55.376638,1
+Cardiff and Vale University Health Board ,Sully Surgery ,W97062 ,4677,353,7.547573,3
+Cardiff and Vale University Health Board ,Corporation Road Surgery ,W97063 ,3265,1875,57.427259,1
+Cardiff and Vale University Health Board ,Highlight Park Medical Practice ,W97064 ,.,.,.,.
+Cardiff and Vale University Health Board ,Pontprennau Medical Centre ,W97065 ,11701,1095,9.358175,3
+Cardiff and Vale University Health Board ,Kings Road Surgery ,W97067 ,5254,519,9.878188,3
+Cardiff and Vale University Health Board ,Greenmount Surgery ,W97068 ,11914,5125,43.016619,1
+Cardiff and Vale University Health Board ,Willowbrook Surgery ,W97069 ,4861,1892,38.922033,1
+Cardiff and Vale University Health Board ,Llandaff North Medical Centre ,W97286 ,6475,835,12.895753,3
+Cardiff and Vale University Health Board ,Butetown Medical Practice ,W97291 ,9606,3247,33.801791,2
+Cardiff and Vale University Health Board ,Whitchurch Medical Centre ,W97294 ,10661,1507,14.135635,3
+Cardiff and Vale University Health Board ,Canna Surgery ,W97296 ,8423,1718,20.396533,3
+Cardiff and Vale University Health Board ,Clare Road Medical Centre ,W97299 ,5251,3562,67.834698,1
+Cardiff and Vale University Health Board ,The Practice Of Health ,W97611 ,8085,3227,39.91342,1
+Cardiff and Vale University Health Board ,Grangetown Health Centre ,W97616 ,4193,2176,51.896017,1
+Cardiff and Vale University Health Board ,Llandaff Surgery ,W97619 ,7504,438,5.836887,4

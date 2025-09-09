@@ -1,0 +1,330 @@
+---
+title: "LTC data in Cardiff and Vale"
+author: "Jonny Currie"
+date: "2025-09-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This page summarises an analysis of data on long-term condition prevalence and modelling for the Cardiff and Vale area.
+
+```{r cav-ltc}
+#Load Packages
+
+pks <- c("tidyverse", "purrr", "tibble", 
+         "lubridate", "readODS", "janitor", "patchwork")
+
+sapply(pks, library, character.only = T)
+
+#Load data
+
+#Prevalence of LTCs by cluster in Wales, from https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Primary-and-Community-Activity/GMS-Contract/diseaseregisters-by-localhealthboard-cluster-gppractice, Year ending 1st April 2024
+
+ltc_prev <- read.csv("LTC_prev_cluster.csv") %>%
+  mutate(practice = str_trim(practice))
+
+#Convert into long format
+
+ltc_long <- ltc_prev %>% drop_na() %>%
+  pivot_longer(cols = -c("lhb", "cluster", "practice", "practice_code"), 
+               names_to = "ltc", 
+               values_to = "prevalence") %>%
+  mutate(prevalence = as.numeric(prevalence))
+
+#CKD data is not published at all-Wales level from GP practice registers, but is available locally in Cardiff and Vale (2024/25 data)
+
+#Load CKD data
+
+ckd_df <- read.csv("ckd_data.csv") %>%
+  select(-Measure) %>%
+  filter(Organisation.Type %in% c("Practice")) %>%
+  select(-Organisation.Type) %>%
+  rename(practice=Organisation, year=Financial.Year, 
+         prevalence=Percentage, lhb=Health.Board) %>%
+  select(practice, prevalence) %>%
+  add_column(lhb = "", cluster = "", practice_code = "", 
+             ltc = "ckd")
+
+#Merge with LTC data, note this is now a Cardiff and Vale only dataset
+
+ltc_long_cav <- ltc_long %>%
+  filter(lhb == "Cardiff and Vale University Health Board ")
+
+ltc_long_ckd <- bind_rows(ltc_long_cav, ckd_df)
+
+#GP practice deprivation data, from https://statswales.gov.wales/Catalogue/Health-and-Social-Care/General-Medical-Services/General-practice-population/deprivation-at-gppracticelevel, April 2024
+
+prac_dep <- read.csv("practice_deprivation.csv") %>%
+  mutate(practice = str_trim(practice))
+
+#Estimated proportions of underdiagnosis of LTCs, from modelling done by Anosova and colleagues (2025), see https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0313877, broken down by deprivation quintile
+
+modelling <- read.csv("results_national_qimd.csv")
+
+#These proportions estimate the levels of estimated underdiagnosis of various LTCs in England in 2008 and in 2018. However they do not include other conditions managed in primary care as such asthma, atrial fibrillation, heart failure and CKD
+
+#A study published in 2018 by Aaron and colleagues (https://pubmed.ncbi.nlm.nih.gov/29756989) suggested around 20% of asthma is underdiagnosed, though there appears little research available to break this down to explore variation across socioeconomic groups
+
+#Work from Wahab and colleagues (2025) suggests around 30% of AF is underdiagnosed, again while it is recognised levels of AF may be higher in areas of deprivation (https://commonslibrary.parliament.uk/health-inequalities-income-deprivation-and-north-south-divides), this is partly already recognised in NHS data and there is limited research on the levels of undiagnosis by deprivation group
+
+#The ECHOES study, one of the largest community heart failure screening studies in the world, found a prevalence of 2.3% of heart failure in the general population (https://bmjopen.bmj.com/content/4/7/e005256). 
+
+#Wales recorded a prevalence of heart failure in 2023/24 of 1.3% (https://phw.nhs.wales/services-and-teams/observatory/data-and-analysis/cardiovascular-disease-prevalence-trends-risk-factors-and-10-year-projections)
+
+#This would make the estimated level of undiagnosis, irrespective of deprivation of 0.56 (1.3/2.3)
+
+#Finally for CKD, a study of NHS data in 2022 by Carpio and colleagues (https://link.springer.com/article/10.1007/s40620-021-01149-0) suggested 48% of patients were undiagnosed
+
+#Generate additional data with estimates of underdiagnosis for these LTCs
+
+add_ltcs <- tibble(
+  disease = rep("af", 5),
+  year = rep(2018, 5),
+  imd5 = c("Q1 Least Deprived", "Q2", "Q3", "Q4", "Q5 Most Deprived"),
+  underdiagnosis = rep(0.20, 5)) %>%
+add_row(
+    disease = rep("heart failure", 5),
+    year = rep(2018, 5),
+    imd5 = c("Q1 Least Deprived", "Q2", "Q3", "Q4", "Q5 Most Deprived"),
+    underdiagnosis = rep(0.56, 5)) %>%
+  add_row(
+  disease = rep("asthma", 5),
+year = rep(2018, 5),
+imd5 = c("Q1 Least Deprived", "Q2", "Q3", "Q4", "Q5 Most Deprived"),
+underdiagnosis = rep(0.20, 5)) %>%
+  add_row(
+    disease = rep("ckd", 5),
+    year = rep(2018, 5),
+    imd5 = c("Q1 Least Deprived", "Q2", "Q3", "Q4", "Q5 Most Deprived"),
+    underdiagnosis = rep(0.48, 5))
+
+#Merge this with previous modelling data
+
+modelling_v2 <- bind_rows(modelling, add_ltcs)
+
+#Join prevalence and practice deprivation data
+
+ltc_df <- ltc_long_ckd %>%
+  select(practice, ltc, prevalence)
+
+prac_dep_cav <- prac_dep %>%
+  filter(lhb == "Cardiff and Vale University Health Board ") %>%
+  mutate(practice = str_trim(practice))
+
+ltc_dep <- left_join(prac_dep_cav, ltc_df, by = c("practice"))
+
+#lot of rows with blank practice data, remove
+
+ltc_dep <- ltc_dep %>%
+  filter(practice != "")
+
+#Need to re-add cluster data, create cluster lookup from original LTC prevalence dataset
+
+prac_cluster_lookup <- read.csv("LTC_prev_cluster.csv") %>%
+  mutate(practice = str_trim(practice)) %>%
+  select(practice, cluster) %>%
+  unique()
+
+ltc_dep <- left_join(ltc_dep, prac_cluster_lookup, by = "practice", 
+          relationship = "many-to-many")
+
+head(ltc_dep)
+
+modelling
+
+#need to join the LTCs between modelled figures and practice LTC prevalance dataset
+
+#drop 2008 modelling figures, use 2018
+
+modelling_v2_final <- modelling_v2 %>% filter(year != 2008) %>%
+  rename(ltc = disease,
+         quintile = imd5) %>% 
+  select(-year) %>%
+  mutate(quintile = case_when(
+    quintile == "Q1 Least Deprived" ~ "5",
+    quintile == "Q2" ~ "4",
+    quintile == "Q3" ~ "3",
+    quintile == "Q4" ~ "2",
+    quintile == "Q5 Most Deprived" ~ "1",
+    TRUE ~ as.character(quintile)
+)) %>%
+  mutate(quintile = as.numeric(quintile))
+
+unique(ltc_dep$quintile)
+unique(modelling_v2_final$quintile)
+
+unique(modelling_v2_final$ltc)
+unique(ltc_dep$ltc)
+
+ltc_dep_v2 <- ltc_dep %>% 
+  filter(ltc %in% c("Chronic.obstructive.pulmonary.disease",
+                    "Secondary.prevention.of.coronary.heart.disease",
+                    "Diabetes.mellitus..patients.aged.17..",
+                    "Hypertension",
+                    "Asthma",
+                    "Atrial.fibrillation",
+                    "Heart.failure",
+                    "Stroke.and.transient.ischaemic.attack", 
+                    "ckd")) %>%
+  mutate(ltc = case_when(
+    ltc == "Chronic.obstructive.pulmonary.disease" ~ "COPD",
+    ltc == "Secondary.prevention.of.coronary.heart.disease" ~ "CHD",
+    ltc == "Hypertension" ~ "Hypertension",
+    ltc == "Stroke.and.transient.ischaemic.attack" ~ "Stroke",
+    ltc == "Diabetes.mellitus..patients.aged.17.." ~ "T2DM",
+    ltc == "Asthma" ~ "asthma",
+    ltc == "Atrial.fibrillation" ~ "af",
+    ltc == "Heart.failure" ~ "heart failure",
+    TRUE ~ as.character(ltc))) %>%
+  mutate(quintile = as.numeric(quintile))
+
+final_df <- left_join(ltc_dep_v2, modelling_v2_final,
+          by = c("ltc", "quintile")) %>%
+  mutate(prevalence = as.numeric(prevalence),
+         patients = as.numeric(patients))
+
+names(final_df)
+
+final_df <- final_df %>%
+  mutate(model_prev = prevalence*(underdiagnosis+1),
+         model_pts = (model_prev/100) * patients,
+         missing_pts = model_pts - ((prevalence/100)*patients))
+
+unique(final_df$lhb)
+
+colours <- c("Recorded prevalence", "Modelled prevalence")
+
+final_df %>%
+  filter(lhb == "Cardiff and Vale University Health Board ") %>%
+  drop_na() %>%
+  select(-lhb, -practice_code, -no_depriv, -underdiagnosis) %>%
+  mutate(quintile = as.factor(quintile)) %>%
+  group_by(quintile, ltc) %>%
+  summarise(prevalence = median(prevalence),
+            model_prev = median(model_prev)) %>%
+  ggplot(aes(x=quintile)) + 
+  geom_point(aes(y=prevalence, colour = "Coded prevalence")) + 
+  geom_point(aes(y=model_prev, colour = "Model prevalence")) + 
+  facet_wrap(~ltc, scales = "free") +
+  theme_bw() + 
+  labs(x="WIMD 2019 quintile", 
+       y="Percentage (%)",
+       colour = "Key", 
+       title = "Differences in recorded and modelled long-term condition prevalence in GP practices in Cardiff and the Vale of Glamorgan",
+       caption = "Data from Digital Health and Care Wales / Stats Wales, July 2024. Modelling by HCB Associates Ltd.")
+  
+
+#Numbers of patients appear wrong - but modelled prevalences seem fitting. Go back and see where patient data gone wrong
+
+final_df %>% filter(lhb == "Cardiff and Vale University Health Board ") %>% select(practice, ltc, missing_pts, quintile) %>% drop_na() %>%
+  ggplot(aes(x=quintile, y=missing_pts, group=quintile)) + 
+  geom_boxplot() +
+  facet_wrap(~ltc)
+  
+### see figures for quintile 1 and 5 
+
+final_df %>%
+  filter(lhb == "Cardiff and Vale University Health Board ") %>%
+  drop_na() %>%
+  select(-lhb, -practice_code, -no_depriv, -underdiagnosis) %>%
+  filter(quintile == 1 | quintile == 5) %>%
+  mutate(quintile = as.factor(quintile)) %>%
+  group_by(quintile, ltc) %>%
+  summarise(prevalence = median(prevalence),
+            model_prev = median(model_prev))
+
+#model growth by 2033 using figures from PHW (https://phw.nhs.wales/services-and-teams/observatory/data-and-analysis/a-summary-of-prevalence-of-non-communicable-disease-and-cancer-incidence-in-wales-trends-and-10-year-projections/)
+
+growth_df <- final_df %>%
+  filter(lhb == "Cardiff and Vale University Health Board ") %>%
+  drop_na() %>%
+  select(-lhb, -practice_code, -no_depriv, -underdiagnosis) %>%
+  filter(quintile == 1 | quintile == 5) %>%
+  mutate(quintile = as.factor(quintile)) %>%
+  group_by(quintile, ltc) %>%
+  summarise(prevalence = median(prevalence),
+            model_prev = median(model_prev)) %>%
+  mutate(projected_prev = case_when(
+    ltc == "CHD" ~ model_prev*1.08,
+    ltc == "COPD" ~ model_prev*1.12,
+    ltc == "Hypertension" ~ model_prev*1.07,
+    ltc == "Stroke" ~ model_prev*1.08,
+    ltc == "T2DM" ~ model_prev*1.22,
+    ltc == "heart failure" ~ model_prev*1.46,
+    ltc == "af" ~ model_prev*1.26,
+    ltc == "asthma" ~ model_prev*1.08,
+    TRUE ~ as.numeric(model_prev))) %>%
+  arrange(ltc, quintile)
+
+colours <- c("Recorded prevalence", "Modelled prevalence", "Future prevalence")
+
+growth_df %>%
+  ggplot(aes(x=quintile)) + 
+  geom_point(aes(y=prevalence, colour = "Coded prevalence")) + 
+  geom_point(aes(y=model_prev, colour = "Modelled prevalence")) + 
+  geom_point(aes(y=projected_prev, colour = "Future prevalence")) + 
+  #scale_y_continuous(limits = c(0, NA)) +
+  facet_wrap(~ltc, scales = "free") +
+  theme_bw() + 
+  labs(x="WIMD 2019 quintile", 
+       y="Percentage (%)",
+       colour = "Key", 
+       title = "Differences in recorded and projected long-term condition prevalence in GP practices in Cardiff and the Vale of Glamorgan",
+       caption = "Data from Digital Health and Care Wales / Stats Wales, July 2024. Modelling by HCB Associates Ltd.")
+
+#Create table to explore LTC prevalence by cluster
+
+growth_cluster_df <- final_df %>%
+  mutate(no_depriv = as.numeric(no_depriv),
+         perc_depriv = as.numeric(perc_depriv)) %>%
+  filter(lhb == "Cardiff and Vale University Health Board ") %>%
+  drop_na() %>%
+  select(cluster, patients, no_depriv, perc_depriv, 
+         ltc, prevalence, model_prev, model_pts, missing_pts) %>%
+  mutate(projected_prev = case_when(
+    ltc == "CHD" ~ model_prev*1.08,
+    ltc == "COPD" ~ model_prev*1.12,
+    ltc == "Hypertension" ~ model_prev*1.07,
+    ltc == "Stroke" ~ model_prev*1.08,
+    ltc == "T2DM" ~ model_prev*1.22,
+    ltc == "heart failure" ~ model_prev*1.46,
+    ltc == "af" ~ model_prev*1.26,
+    ltc == "asthma" ~ model_prev*1.08,
+    TRUE ~ as.numeric(model_prev)))
+
+colours <- c("Recorded prevalence", "Modelled prevalence", "Future prevalence")
+
+growth_cluster_df_summary <- growth_cluster_df %>%
+  group_by(cluster, ltc) %>%
+  summarise_if(is.numeric, median, na.rm=T)
+
+unique(growth_cluster_df$cluster)
+
+growth_cluster_df_summary %>%
+  filter(ltc %in% c("af", "CHD", "COPD", "heart failure", "Hypertension", "T2DM")) %>%
+  ggplot(aes(x=cluster)) + 
+  geom_point(aes(y=prevalence, colour = "Coded prevalence")) + 
+  geom_point(aes(y=model_prev, colour = "Modelled prevalence")) + 
+  geom_point(aes(y=projected_prev, colour = "Future prevalence")) + 
+  #scale_y_continuous(limits = c(0, NA)) +
+  facet_wrap(~ltc, scales = "free") +
+  theme(axis.text.x = element_text(angle = 90)) + 
+  labs(x="WIMD 2019 quintile", 
+       y="Percentage (%)",
+       colour = "Key", 
+       title = "Differences in recorded and projected long-term condition prevalence in clusters in Cardiff and the Vale of Glamorgan",
+       caption = "Data from Digital Health and Care Wales / Stats Wales, July 2024. Modelling by HCB Associates Ltd.")
+
+growth_cluster_df_summary %>%
+filter(ltc %in% c("af", "CHD", "COPD", "heart failure", "Hypertension", "T2DM", 
+                  "ckd", "asthma", "Stroke")) %>%
+  mutate(preval_pts = (prevalence/100)*patients) %>%
+  select(cluster, ltc, perc_depriv, prevalence, model_prev, projected_prev, 
+         preval_pts, model_pts, missing_pts) %>%
+  write.csv("table_raw_pts_added.csv")
+```
