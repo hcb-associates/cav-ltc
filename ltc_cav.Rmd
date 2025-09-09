@@ -2,7 +2,7 @@
 title: "LTC data in Cardiff and Vale"
 author: "Jonny Currie"
 date: "2025-09-09"
-output: html_document
+output: rmarkdown::github_document
 ---
 
 ```{r setup, include=FALSE}
