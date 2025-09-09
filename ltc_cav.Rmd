@@ -2,7 +2,7 @@
 title: "LTC data in Cardiff and Vale"
 author: "Jonny Currie"
 date: "2025-09-09"
-output: rmarkdown::github_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -319,12 +319,4 @@ growth_cluster_df_summary %>%
        colour = "Key", 
        title = "Differences in recorded and projected long-term condition prevalence in clusters in Cardiff and the Vale of Glamorgan",
        caption = "Data from Digital Health and Care Wales / Stats Wales, July 2024. Modelling by HCB Associates Ltd.")
-
-growth_cluster_df_summary %>%
-filter(ltc %in% c("af", "CHD", "COPD", "heart failure", "Hypertension", "T2DM", 
-                  "ckd", "asthma", "Stroke")) %>%
-  mutate(preval_pts = (prevalence/100)*patients) %>%
-  select(cluster, ltc, perc_depriv, prevalence, model_prev, projected_prev, 
-         preval_pts, model_pts, missing_pts) %>%
-  write.csv("table_raw_pts_added.csv")
 ```
